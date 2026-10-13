@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Slopfold",
+  "version": "0.1.0",
+  "description": "Folds AI-slop posts in your LinkedIn feed. Not affiliated with LinkedIn.",
+  "host_permissions": ["http://127.0.0.1:8765/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": ["https://www.linkedin.com/*"],
+    "js": ["fold.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}
