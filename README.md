@@ -40,7 +40,7 @@ After editing any file, click ↻ on the extension in `chrome://extensions` and 
 | Model | `JEV_MODEL` env var | `typesafe/jev-router` |
 | What counts as slop | `ASK` prompt in `shim.py` | generic, formulaic, engagement-bait posts |
 
-Each unique post is checked once per tab, so scrolling back up does not re-bill or flip a verdict.
+Each unique post is checked once per page load, so scrolling back up does not re-bill or flip a verdict. Refreshing LinkedIn clears the cache, so posts are checked (and billed) again.
 
 ## Troubleshooting
 
